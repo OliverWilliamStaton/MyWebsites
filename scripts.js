@@ -22,19 +22,22 @@
 
 					document.getElementById("box").style.borderRadius="100px";
 
-				} else {
+					}
+					
+					else {
 
 					document.getElementById("box").style.borderRadius="0px";
 
-				}
-				var top= Math.random();
-				top = top * 300;
+					}
+					
+					var top= Math.random();
+					top = top * 300;
 
-				var left= Math.random();
-				left = left * 300;
+					var left= Math.random();
+					left = left * 300;
 
-				document.getElementById("box").style.top=top + "px";
-				document.getElementById("box").style.left=left + "px";
+					document.getElementById("box").style.top=top + "px";
+					document.getElementById("box").style.left=left + "px";
 
 					document.getElementById("box").style.backgroundColor=getRandomColor();
 
@@ -42,7 +45,7 @@
 
 					createdTime = Date.now();
 
-					}, time);
+				}, time);
 		
 			}
 
@@ -56,14 +59,13 @@
 
 				document.getElementById("time").innerHTML=reactionTime;
 
-
 				attempts++;
 				document.getElementById("displayAttempts").innerHTML=attempts;
 
 				this.style.display="none";
 				makeBox();
 				
-				}
+			}
 			
 			makeBox();
 
